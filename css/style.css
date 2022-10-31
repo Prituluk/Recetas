@@ -6,6 +6,9 @@
 
 html {
     font-size: 62.5%;
+    background-image: url(.//assets/img/fondo.png);
+    background-repeat: repeat;
+    
 }
 
 :root {
@@ -89,4 +92,148 @@ html {
     height: 40px;
     border: none;
     background-color: transparent;
+}
+
+.atajos {
+    width: 100%;
+    height: 60px;
+    background-color: #D5ECC2;
+
+}
+.atajos ul {
+    width: 80%;
+    height: 60px;;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+}
+.atajos ul li {
+    list-style: none;
+}
+.atajos ul li a {
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: bold;
+    display: inline-flex;
+    height: 50px;
+    width: 160px;;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px orange;
+    border-radius: 20px;;
+    color: #551a8b;
+}
+
+.section-top {
+    width: 90%;
+    height: 500px;
+    /* background-color: var(--color-top); */
+    background-image: url('../css/assets/img/healthy-food-choices.jpg');
+    background-repeat: no-repeat;
+    margin: 10px auto;
+    border-radius: 50px;;
+    border: 2px solid  #ffa500;
+}
+
+.section-top h1 {
+    font-size: 7rem;
+    text-shadow: 2px 2px #ffa500;
+    width: 500px;
+    height: 200px;
+    padding-top: 100px;
+    margin: 0 auto;
+}
+.section-top a {
+    text-decoration: none;
+    color: black;
+}
+.section-top h2 {
+    font-size: 3.5rem;
+    width: 700px;
+    margin: 0 auto;
+}
+
+.section-top p {
+    font-size: 2rem;
+    font-weight: 600;
+    width: 700px;
+    margin: 40px auto;
+    
+}
+.arrow-right img{
+   width: 50px;
+   height: 50px;
+   margin-left: 85%;
+   margin-top: -30px;
+   
+}
+
+.main-content {
+    width: 90%;
+    height: 700px;
+    margin: 0 auto;
+}
+.main-content .main-content-title {
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: black;
+    text-shadow: 2px 2px #ffa500 ;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-mid);
+    border-radius: 20px;
+}
+
+.container-grid {
+    display: grid;
+    gap: 10px;
+    grid-template: repeat(1, 300px) / repeat(4, 250px);
+    grid-auto-flow: row ;
+    justify-content: center;
+    margin-top: 30px;
+}
+.card-food {
+    background-color: var(--color-mid);
+    border-radius: 20px 20px 0px 0px;
+    box-shadow: -1px 2px 15px 9px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -1px 2px 15px 9px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 2px 15px 9px rgba(0,0,0,0.75);
+}
+.card-food .food-img{
+    width: 250px;
+    height: 200px;
+    border-radius: 20px 20px 0px 0px;
+    
+}
+.card-food .detail{
+    text-align: center;
+    width: 250px;
+    height: 30px;
+    border: 2px solid orange;
+    border-radius: 10px;
+    font-size: 2rem;
+    margin: 3px 0px;
+}
+
+.icon-card {
+    width: 20px;
+    height: 20px;
+    display: inline;
+    margin-left: 10px;
+    
+}
+.point{
+    
+    font-size: 1.5rem;
+    display: inline-flex;
+    margin-left: 5px;
+    
+}
+
+.container-icon-card {
+    width: 120px;
+    height: 40px;
+    display: inline-flex;
 }
