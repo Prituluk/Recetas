@@ -248,8 +248,8 @@ html {
 .container-grid-country {
     height: 620px;
     display: grid;
-    gap: 20px;
-    grid-template: repeat(1, 100px) / repeat(2, 500px);
+    gap: 10px;
+    grid-template: repeat(9, 80px) / repeat(3, 350px);
     grid-auto-flow: row ;
     justify-content: center;
     margin-top: 20px;
@@ -257,7 +257,7 @@ html {
 }
 .card-country {
     background-color: var(--color-mid);
-    border-radius: 20px 20px 0px 0px;
+    border-radius: 20px;
     box-shadow: -1px 2px 15px 9px rgba(0,0,0,0.75);
     -webkit-box-shadow: -1px 2px 15px 9px rgba(0,0,0,0.75);
     -moz-box-shadow: -1px 2px 15px 9px rgba(0,0,0,0.75);
