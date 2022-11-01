@@ -134,6 +134,9 @@ html {
     margin: 10px auto;
     border-radius: 50px;;
     border: 2px solid  #ffa500;
+    box-shadow: -1px 6px 4px 6px rgba(0,0,0,0.52);
+-webkit-caja-sombra: -1px 6px 4px 6px rgba(0,0,0,0.52);
+-moz-box-shadow: -1px 6px 4px 6px rgba(0,0,0,0.52);
 }
 
 .section-top h1 {
@@ -174,7 +177,7 @@ html {
     height: 700px;
     margin: 0 auto;
 }
-.main-content .main-content-title {
+.main-content-title {
     font-size: 3.5rem;
     font-weight: 600;
     color: black;
@@ -184,15 +187,19 @@ html {
     justify-content: center;
     background-color: var(--color-mid);
     border-radius: 20px;
+    border: 1px solid orange;
 }
 
 .container-grid {
+    height: 620px;
     display: grid;
     gap: 10px;
     grid-template: repeat(1, 300px) / repeat(4, 250px);
     grid-auto-flow: row ;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 20px;
+    overflow: hidden;
+    
 }
 .card-food {
     background-color: var(--color-mid);
@@ -236,4 +243,45 @@ html {
     width: 120px;
     height: 40px;
     display: inline-flex;
+}
+
+.container-grid-country {
+    height: 620px;
+    display: grid;
+    gap: 20px;
+    grid-template: repeat(1, 100px) / repeat(2, 500px);
+    grid-auto-flow: row ;
+    justify-content: center;
+    margin-top: 20px;
+    overflow: scroll;
+}
+.card-country {
+    background-color: var(--color-mid);
+    border-radius: 20px 20px 0px 0px;
+    box-shadow: -1px 2px 15px 9px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -1px 2px 15px 9px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 2px 15px 9px rgba(0,0,0,0.75);
+    justify-content: center;
+    align-items:center ;
+    display: inline-flex;
+} 
+.card-country:hover {
+    cursor: pointer;
+}
+.flag-img {
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+}
+
+.name-country {
+    width: 300px;
+    height: 100px;
+    display: inline-flex;
+    font-size: 4rem;
+    /* position: absolute; */
+    align-items: center;
+    justify-content:baseline;
+    margin-left: 20px;
+    justify-items: center;
 }
