@@ -207,7 +207,19 @@ html {
     box-shadow: -1px 2px 15px 9px rgba(0,0,0,0.75);
     -webkit-box-shadow: -1px 2px 15px 9px rgba(0,0,0,0.75);
     -moz-box-shadow: -1px 2px 15px 9px rgba(0,0,0,0.75);
+    transition: all 150ms ease-in-out;
 }
+.card-food:hover{
+    top: -3px;
+    left: -3px;
+    box-shadow: 3px 3px 15px 0px rgba(82, 82, 82, 0.85);
+}
+
+.card:active {
+    top: 2px;
+    left: 2px;
+}
+
 .card-food .food-img{
     width: 250px;
     height: 200px;
@@ -284,4 +296,15 @@ html {
     justify-content:baseline;
     margin-left: 20px;
     justify-items: center;
+}
+
+.list-grid {
+    height: 620px;
+    display: grid;
+    gap: 10px;
+    grid-template: repeat(1, 300px) / repeat(4, 250px);
+    grid-auto-flow: row ;
+    justify-content: center;
+    margin-top: 20px;
+    overflow: hidden;
 }
